@@ -2,6 +2,7 @@ import { all, takeEvery, take } from "redux-saga/effects";
 
 
 //@BlueprintReduxSagaImportInsertion
+import EmailAuth1183578Saga from '../features/EmailAuth1183578/redux/sagas';
 
 function* helloSaga() {
   console.log("Hello from saga!");
@@ -14,6 +15,7 @@ export function* mainSaga() {
 
 
     //@BlueprintReduxSagaMainInsertion
+EmailAuth1183578Saga,
     
   ]);
 }
